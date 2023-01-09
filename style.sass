@@ -1,0 +1,129 @@
+*
+    --name-padding-left: 12vw
+    --header-font-size: 5.4vw
+    --photos-font-padding: var(--header-font-size) * 4.55
+    --font-padding-top: 9vw
+    --photos-extra-padding: 5vw
+
+body
+    height: 300vh
+    overflow-x: hidden
+    scroll-behavior: smooth
+    font-family: 'Mulish'
+    font-style: normal
+    color: white
+    // background-color: #f4f5e4
+
+
+.background
+    position: fixed
+    width: calc( 500vw / 8 )
+    right: 0
+    top: 0
+    height: 100vh
+    background-color: #272727 
+    z-index: -1
+
+
+header
+    // background: linear-gradient(90deg, #272727 36.7%, #ffffff 0)
+    background-color: #fff
+    // position: fixed
+    width: 100vw
+    height: 20vh
+    z-index: -5
+
+.name
+    position: fixed
+    font-family: 'Mulish'
+    font-style: normal
+    font-weight: 200
+    font-size: var(--header-font-size)
+    line-height: var(--font-padding-top)
+    padding-left: 5vw
+    z-index: 1
+    color: black
+
+.photo_header
+    overflow: hidden
+    // padding-top: var(--font-padding-top)
+    width: 100vw
+    // padding-left: 4vw
+    grid-column: 1 / 3
+    z-index: 3
+    position: relative
+
+.photos-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    // flex-direction: column
+    // align-items: flex-end
+    // justify-items: stretch
+    // align-items: start
+    padding-top: var(--font-padding-top)
+    width: 90vw
+    row-gap: 15vw
+    margin: auto
+    justify-items: end
+
+.menu
+    grid-row: 2 / 20
+    // border: 5px solid red
+    font-size: 22px
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    gap: 54px
+    height: 80vh
+    max-width: 15vw
+    // padding: 80px
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    position: fixed
+    top: 20vh
+    left: 37vw
+    line-height: 38px
+    text-align: justify
+
+
+.photos-wrapper .photo
+    // width: calc( 100vw - var(--name-padding-left) - var(--photos-font-padding) - 4vw)
+    // width: 100%
+    height: 100vh
+    // float: right
+    // padding: 150px 0
+    // padding-right: 4vw
+    grid-column: 3 / 4
+    max-width: 33vw
+
+.left
+    height: 100vh
+    grid-column: 1 / 2 !important
+    max-width: 33vw
+
+
+img
+    object-fit: contain 
+    // filter: grayscale(100%) 
+
+.hide
+    opacity: 0
+
+.color-wrapper
+    position: fixed
+    background-color: #000000
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    z-index: -1
+
+.photo-wrapper
+    width: 100vw
+    height: 100vh
+
+
+.photo-wrapper img
+    padding-left: 60%
+    padding-top: 10%
+    height: 80%
